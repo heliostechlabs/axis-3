@@ -20,7 +20,7 @@ openssl_public_encrypt($data, $encryptedData, $publicKey, OPENSSL_PKCS1_OAEP_PAD
 
 openssl_private_decrypt($encryptedData, $decryptedData, $privateKey, OPENSSL_PKCS1_OAEP_PADDING);
 
-echo "Encrypted Data for 1st algo: " . base64_encode($encryptedData) . "\n";
+echo "Encrypted Data from 1st algo: " . base64_encode($encryptedData) . "\n";
 
 $encryptionKey2 = random_bytes(32);
 
